@@ -1,0 +1,23 @@
+
+<mat-card class="filter">
+    <mat-card class="margin ">
+        <mat-card-title>Price Filter</mat-card-title>
+    </mat-card>
+    
+    <!-- {{Rs|json}} -->
+    <mat-slider 
+    (click)="filter()" [(ngModel)]="Rs" thumbLabel [displayWith]="formatLabel"
+    [max]="55555" [min]="0" [step]="50"
+  aria-label="units" ></mat-slider><br>
+   
+  <div class="d-flex justify-content-around p-2">
+    <span>₹0</span>
+    <div><strong>{{min | currency: 'INR'}}</strong></div>
+    <div>to</div>
+    <div><strong>{{value | currency: 'INR'}}</strong></div>
+    <span style="float: right;">₹{{Rs||0}}</span>
+  </div>
+</mat-card>
+ 
+
+  <!-- <mat-slider min="50" max="2000" value="50"></mat-slider> -->

@@ -1,0 +1,45 @@
+<!-- <form class="example-form" >
+    <mat-form-field class="example-full-width" style="width: 100%">
+      <mat-chip-list #chipList>
+        <mat-chip style="margin-top:0.4em;" *ngFor="let option of  this.dataService.searchOption" (removed)="removeOption(option)">
+    
+          <span>{{item.title}}</span>
+          
+          <mat-icon matChipRemove>cancel</mat-icon>
+        </mat-chip>
+        <input #autocompleteInput type="text" placeholder="Enter title" aria-label="Number" matInput [formControl]="myControl"
+          [matAutocomplete]="auto" [matChipInputFor]="chipList">
+        <mat-autocomplete #auto="matAutocomplete" [displayWith]="displayFn">
+          <mat-option *ngFor="let option of autoCompleteList" [value]="option" (onSelectionChange)="filterPostList($event)">
+            {{item.title}}
+          </mat-option>
+        </mat-autocomplete>
+      </mat-chip-list>
+    
+    </mat-form-field> -->
+
+    
+<!--     
+    </form> -->
+
+    <!-- <input type = "text" [(ngModel)]="Productlist" (input) = "getTotalBooks()"> -->
+
+
+    <!-- <div>
+      <input type="search" [(ngModel)]="search1"  (keyup)="searching($event)"
+          placeholder="search products" (search)="cancelSearch()" >
+  </div> -->
+
+
+
+     <div class="header">
+      <div class="book"> <mat-icon>book</mat-icon>Book cart</div>
+      <div class="topnav"><div>
+      <input type="search" [(ngModel)]="searchiteam"  (keyup)="searching($event)"
+          placeholder="search products" (search)="cancelSearch()" >
+  </div></div>
+       <div class="cart" ><mat-icon>shopping_cart</mat-icon></div>
+      <div class="login" style="margin-bottom: -2%;">login</div>
+     <div class="theme"><mat-icon>format_color_fill</mat-icon></div>
+      <div class="swagger"><img _ngcontent-jkf-c64="" src="https://static1.smartbear.co/swagger/media/assets/swagger_fav.png">swagger           github</div>
+  </div> 
