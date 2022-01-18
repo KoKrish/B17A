@@ -22,19 +22,10 @@ export class FilterlistComponent implements OnInit {
 
   ngOnInit(): void {
     this.getTotalBooks();
-    // this.fetchCategories();
   }
   
 
-  // fetchCategories() {
-  //   debugger;
-  //   this.categories$ = this.data.categories$
-  //     .pipe(
-  //       catchError(error => {
-  //         console.log('Error ocurred while fetching category List : ', error);
-  //         return EMPTY;
-  //       }));
-  // }
+ 
 
   getTotalBooks(){
     this.data.getTotalBooks().subscribe((data=>{

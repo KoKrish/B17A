@@ -38,7 +38,6 @@ export class PriceFilterComponent implements OnInit {
   filter() {
     this.Productlist= this.filterprice
     .filter((a:any)=>{
-      // debugger;
       if(a.price<=this.Rs){
         return a
       }

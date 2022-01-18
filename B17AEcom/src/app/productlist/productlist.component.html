@@ -7,23 +7,16 @@
             <ng-container      *ngFor="let item of Productlist |filter: searchKey" >
               <div class="card col-md-3">
                 <img 
-                  src="https://bookcart.azurewebsites.net/Upload/{{item.coverFileName}}"
+                  src="https://bookcart.azurewebsites.net/upload/{{item.coverFileName}}"
                   alt=""
                 />
-                <h5
-                  style="
-                    white-space: nowrap;
-                    overflow: hidden;
-                    text-overflow: ellipsis;
-                    max-width: 100ch;
-                  "
-                >
-                  {{ item.title }}
-                </h5>
+                <p>{{ item.title }}</p>
                 <p>
                   <strong>{{item.price | currency: 'INR'}}</strong>
                 </p>
+                <span class="whistlist"><mat-icon>favorite_border</mat-icon>
                 <button class="btn btn-primary"><mat-icon>shopping_cart</mat-icon>Add to Cart</button>
+              </span>
               </div>
             </ng-container>
           </div>
@@ -32,19 +25,4 @@
       
    
     
-  <!-- <div class="container">
-      <div class="row">
-          <ng-container *ngFor="let item of AllBooks">
-              <div class="card col-md-3">
-                  <img
-                  src="https://bookcart.azurewebsites.net/Upload/9d8f4978-0ef8-42d0-873a-4eb583439237HP2.jpg"
-                  alt=""
-                />
-                  <h5 style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 100ch;">{{item.title}}</h5>
-                  <p><strong>Price:</strong> ₹{{item.price}}</p>
-                  <button class="btn btn-primary" >Add to cart</button>
-              </div>
-          </ng-container>
-  
-      </div>
-  </div> -->
+ 

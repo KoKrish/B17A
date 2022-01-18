@@ -1,18 +1,6 @@
 mat-card {
     padding: 0px !important;
-    /* width: 20%; */
     box-shadow: 5px red;
     
-    /* position: relative; */
 }
 
-.Inactive[ngStyle]{
-    background-color: #fb641b!important;
-}
-
-.active{
-    background-color: orange;
-}
-.InActive mat-list-option {
-    background-color: orange;
-}
